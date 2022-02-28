@@ -30,7 +30,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
 </head>
-
+<link rel="stylesheet" href="../css/menu.css">
 <body>
 <!--De kop-->
 <div class="container-fluid text-center">
@@ -45,8 +45,12 @@
 <div class="collapse navbar-collapse" id="tab">
       <ul class="navbar-nav" >
        <li class="nav-item "><a class="nav-link" href="../index.html">Home</a></li> <!--class="active bg-1"-->
-       <li class="nav-item"><a class="nav-link" href="../behandelingen/behandelingen.html">Behandelingen</a></li>
-       <li class="nav-item active"><a class="nav-link" href="tarieven.html">Tarieven</a></li>
+<div class="dropdown">
+  <li class="nav-item"><a href="../behandelingen.html"><button class="dropbtn nav-link">Behandelingen</button></a></li>
+  <div class="dropdown-content">
+  <a href="../bestanden/batc5.pdf">BATC</a>
+</div> 
+		  </div>       <li class="nav-item active"><a class="nav-link" href="tarieven.html">Tarieven</a></li>
        <li class="nav-item"><a class="nav-link" href="../berichten/berichten.html">Berichten</a></li>
        <li class="nav-item"><a class="nav-link" href="../links/links.html">Lid van/Links</a></li>
        <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact/Route</a></li>
